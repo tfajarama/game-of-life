@@ -3,7 +3,7 @@ package sample
 import (
 	"fmt"
 	"github.com/tfajarama/game-of-life/utils/generateboard"
-	"github.com/tfajarama/game-of-life/utils/print"
+	"github.com/tfajarama/game-of-life/utils/Print"
 )
 
 var (
@@ -14,11 +14,11 @@ var (
 )
 
 func SliceTwoDimension() {
-	print.PrintBoard(&slice)
+	Print.PrintBoard(&slice)
 
 	for k := 0; k < banyakIterasi; k++ {
 		slice = generateboard.NextBoard(&slice)
 		fmt.Printf("Generation Number: #%d\n", k+1)
-		print.PrintBoard(&slice)
+		Print.PrintBoard(&slice)
 	}
 }
