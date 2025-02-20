@@ -1,4 +1,4 @@
-package Print
+package print
 
 import "fmt"
 
